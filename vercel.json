@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/experiences",
+      "destination": "/experiences.html"
+    },
+    {
+      "source": "/jakarta-heritage",
+      "destination": "/jakarta-heritage.html"
+    },
+    {
+      "source": "/fmcg-market",
+      "destination": "/fmcg-market.html"
+    },
+    {
+      "source": "/business",
+      "destination": "/business.html"
+    }
+  ]
+}

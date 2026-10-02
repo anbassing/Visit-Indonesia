@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "on-tertiary-fixed": "#380d00", "on-tertiary-container": "#e2805c", "tertiary": "#3b0e00", "surface-tint": "#476556", "secondary-container": "#dae6d1", "secondary-fixed": "#dae6d1", "outline-variant": "#c2c8c2", "on-surface": "#1b1c1a", "surface-dim": "#dbdad6", "tertiary-container": "#5e1c01", "surface-bright": "#fbf9f5", "on-primary": "#ffffff", "surface-container-high": "#eae8e4", "surface": "#fbf9f5", "primary-container": "#1b382b", "surface-container-low": "#f5f3ef", "surface-variant": "#e4e2de", "inverse-on-surface": "#f2f0ed", "outline": "#727974", "on-secondary-fixed-variant": "#3f4a3a", "error": "#ba1a1a", "secondary-fixed-dim": "#becab6", "on-secondary-fixed": "#151e11", "tertiary-fixed-dim": "#ffb59b", "primary": "#042217", "on-surface-variant": "#424844", "on-background": "#1b1c1a", "on-tertiary": "#ffffff", "surface-container": "#efeeea", "on-primary-fixed": "#022015", "surface-container-lowest": "#ffffff", "on-secondary-container": "#5d6857", "inverse-primary": "#adcebc", "inverse-surface": "#30312e", "on-primary-container": "#82a291", "primary-fixed": "#c9ead7", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#7a3012", "background": "#fbf9f5", "primary-fixed-dim": "#adcebc", "on-primary-fixed-variant": "#304d3f", "surface-container-highest": "#e4e2de", "on-error": "#ffffff", "tertiary-fixed": "#ffdbcf", "on-error-container": "#93000a", "secondary": "#576251" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "6rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-2xl": "4rem", "margin-tablet": "2.5rem", "margin": "1.5rem", "margin-desktop": "5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl-mobile": [ "Playfair Display" ], "headline-xl": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "display-hero-mobile": [ "Playfair Display" ], "headline-md": [ "Playfair Display" ], "title-editorial": [ "Playfair Display" ], "currency-display": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-prominent": [ "Plus Jakarta Sans" ], "display-hero": [ "Playfair Display" ], "label-caption": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ] }, "fontSize": { "headline-xl-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "500" } ], "title-editorial": [ "20px", { "lineHeight": "28px", "fontWeight": "500" } ], "currency-display": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-prominent": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-caption": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" } ] } } } };</script><meta content="#042217" name="theme-color"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(27,56,43,0.04)]"><div class="h-20 w-full px-margin-mobile md:px-margin-tablet xl:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="/"><img alt="VisitIndonesia.co.id Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrhSACeSFzbdf5G-Zt43WTOZohH28QGQEun4T5dDQZ4aOOKTQywVvH5bnu9EUJWIWfnz9wPXPDxIzunKBbOfOOeC5TvssOijNhZsNlUMTpxsbngeUGHl_SY-9et4n37A65v1SUZVzCHe_fDW03vxCo8i0A-JWtgbwMo3OcWwwv7au2ga_FHCwkOQP3M-dv64sK_rDblY1J-Rdmh28tHTicaqo56VpuuoSsvDHn5vW7GmM2GGHS-s3rqQ"/><span class="font-title-editorial text-title-editorial tracking-tight text-primary font-semibold hidden sm:inline-block">VISITINDONESIA<span class="text-tertiary-container font-body-sm text-body-sm align-super text-xs font-bold">.CO.ID</span></span></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-label-prominent text-label-prominent border-b-2 border-primary-container pb-1"><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors" data-path="explore" href="/experiences">Explore</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors" data-path="destinations" href="/#destinations">Destinations</a><a aria-current="page" class="transition-colors text-primary font-label-prominent text-label-prominent border-b-2 border-primary-container pb-1" data-path="experiences" href="/experiences">Experiences</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors" data-path="business" href="/business">Business</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">search</span></button><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-caption text-label-caption uppercase tracking-wider"><button class="hover:text-primary transition-colors flex items-center gap-0.5" type="button"><span>EN</span><span class="material-symbols-outlined text-xs">expand_more</span></button><span class="text-outline-variant">·</span><button class="hover:text-primary transition-colors flex items-center gap-0.5" type="button"><span>USD</span><span class="material-symbols-outlined text-xs">expand_more</span></button></div><a class="hidden sm:inline-flex items-center justify-center px-space-md py-2.5 rounded-lg bg-primary-container text-surface-bright font-label-prominent text-label-prominent hover:bg-primary transition-all shadow-[0_2px_8px_-2px_rgba(27,56,43,0.1)]" data-path="plan-experience" href="/experiences">Plan Your Experience</a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNl4kt1NO-VN8WEeE03a3Mz8Tco8aXEv_-FEa6NeiuFZ-6T8zepoffAEfyNgUSqkom_kmAzSqQyVQCbOCzJ0N8rQLre2l6Uw1rQT7BpDQ58IVHa0iq5q6PscbePJfi8OMCTxaXCdfPaMNfMvQCfJeLqV5vsicAsPHlTdF5ZESHmkFqNdYzcaQtnwmpH-3lLZ_XU4FWlh4oZHNVldyoRM3G2t0mJ-QfJJ7MqVCFD0KJerpLKI8JRgoc"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Immersive Editorial Top Banner inspired by Javanese highland heritage -->
+<div class="relative w-full overflow-hidden bg-primary text-surface-bright py-space-2xl px-margin-mobile md:px-margin-tablet xl:px-margin-desktop">
+<div class="absolute inset-0 opacity-20 pointer-events-none mix-blend-luminosity bg-cover bg-center" data-alt="Majestic panoramic landscape of lush emerald green tiered rice terraces in Central Java near ancient stone temples and towering volcanic peaks during atmospheric golden hour dawn with rolling fog and traditional village roofs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnEsnbN89nQDVabfbjf2gW0eRpr3MNwzwArD8hG0a20zlBMNDeK1e29iIs8xeS3ILLQzjWzmIGAlrOppPc7yLiKSIF5CJU8icvs1-4grYE4Sm0SBx5aOAWmPLJIf-NXyG3wDduHey9ipMI63c--h86oFbQUewHNkNUxMrUu9lW62sIFdHQHFwPaCG81vFXbZOJ3KiHZKlBqwM2AGzIWU57z_Pkop8nMxGhS6ibqFhd6lIRGsDIq4sS')"></div>
+<div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-surface-tint/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-5xl space-y-space-md">
+<div class="inline-flex items-center gap-space-xs text-on-primary-container font-label-caption text-label-caption uppercase tracking-widest px-3 py-1 rounded-full bg-primary-container/80 backdrop-blur-sm shadow-sm">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>Sovereign Quality Guarantee · Registered BKPM Desk</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-surface-bright tracking-tight leading-none">
+        Explore Experiences in Indonesia
+      </h1>
+<p class="font-body-lg text-body-lg text-inverse-primary max-w-2xl font-light leading-relaxed">
+        Curated cultural journeys, master artisan workshops, culinary immersions, and sovereign industry discovery tours tailored for discerning global voyagers.
+      </p>
+<!-- Active Search & Horizontal Quick Filters Bar -->
+<div class="pt-space-sm">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-2 sm:p-3 shadow-xl flex flex-wrap lg:flex-nowrap items-center gap-2 text-on-surface">
+<div class="flex items-center gap-2 flex-1 min-w-[240px] px-3 py-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-outline text-xl">search</span>
+<input class="bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline w-full focus:outline-none" placeholder="Search experiences, artisans, regions..." type="text"/>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap sm:flex-nowrap">
+<!-- Filter Dropdown 1 -->
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-prominent font-label-prominent transition-all" type="button">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+<span>All Indonesia</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<!-- Filter Dropdown 2 -->
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-prominent font-label-prominent transition-all" type="button">
+<span class="material-symbols-outlined text-sm text-primary">category</span>
+<span>Any Category</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<!-- Filter Dropdown 3 -->
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-prominent font-label-prominent transition-all hidden md:flex" type="button">
+<span class="material-symbols-outlined text-sm text-primary">schedule</span>
+<span>Any Duration</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<!-- Filter Dropdown 4 -->
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-prominent font-label-prominent transition-all hidden md:flex" type="button">
+<span class="material-symbols-outlined text-sm text-primary">payments</span>
+<span>Any Price</span>
+<span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</button>
+<!-- Clear All -->
+<button class="px-3 py-2 text-on-surface-variant hover:text-error text-label-caption font-label-caption uppercase tracking-wider transition-colors ml-auto sm:ml-0" type="button">
+              Clear All
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Marketplace Section (Sidebar + Grid Canvas) -->
+<div class="w-full px-margin-mobile md:px-margin-tablet xl:px-margin-desktop py-space-xl">
+<div class="flex flex-col lg:flex-row gap-space-xl items-start">
+<!-- Left Interactive Filter Sidebar (w-72 sticky) -->
+<aside class="w-full lg:w-72 shrink-0 lg:sticky lg:top-28 space-y-space-lg bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<!-- Experience Ecosystem Toggle -->
+<div class="space-y-space-xs">
+<div class="text-label-caption font-label-caption uppercase tracking-widest text-on-surface-variant font-semibold">
+            Experience Ecosystem
+          </div>
+<div class="grid grid-cols-3 gap-1 p-1 bg-surface-container-low rounded-lg text-center font-label-caption text-label-caption">
+<button class="py-1.5 px-2 rounded font-semibold bg-primary text-surface-bright shadow-sm" type="button">All</button>
+<button class="py-1.5 px-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all truncate" type="button">Cultural</button>
+<button class="py-1.5 px-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all truncate" type="button">Business</button>
+</div>
+</div>
+<!-- Destinations Filter -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-label-prominent font-label-prominent text-primary">
+<span>Destinations</span>
+<span class="material-symbols-outlined text-base">expand_less</span>
+</div>
+<div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center justify-between hover:text-primary cursor-pointer py-0.5">
+<span class="flex items-center gap-2">
+<input checked="" class="accent-primary-container rounded" type="checkbox"/>
+<span>Jakarta</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">48</span>
+</label>
+<label class="flex items-center justify-between hover:text-primary cursor-pointer py-0.5">
+<span class="flex items-center gap-2">
+<input checked="" class="accent-primary-container rounded" type="checkbox"/>
+<span>Yogyakarta</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">36</span>
+</label>
+<label class="flex items-center justify-between hover:text-primary cursor-pointer py-0.5">
+<span class="flex items-center gap-2">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Bali</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">52</span>
+</label>
+<label class="flex items-center justify-between hover:text-primary cursor-pointer py-0.5">
+<span class="flex items-center gap-2">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Bandung</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">24</span>
+</label>
+<label class="flex items-center justify-between hover:text-primary cursor-pointer py-0.5">
+<span class="flex items-center gap-2">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Central Java</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">28</span>
+</label>
+<label class="flex items-center justify-between hover:text-primary cursor-pointer py-0.5">
+<span class="flex items-center gap-2">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Flores</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">18</span>
+</label>
+<label class="flex items-center justify-between hover:text-primary cursor-pointer py-0.5">
+<span class="flex items-center gap-2">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Sumatra</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">14</span>
+</label>
+</div>
+</div>
+<!-- Categories Filter -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-label-prominent font-label-prominent text-primary">
+<span>Categories</span>
+<span class="material-symbols-outlined text-base">expand_less</span>
+</div>
+<div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input checked="" class="accent-primary-container rounded" type="checkbox"/>
+<span>Culture &amp; Heritage</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Food &amp; Culinary</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Art &amp; Craft</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Religion &amp; Architecture</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Nature &amp; Highlands</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Specialty Coffee</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>FMCG &amp; Manufacturing</span>
+</label>
+</div>
+</div>
+<!-- Duration Filter -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-label-prominent font-label-prominent text-primary">
+<span>Duration</span>
+<span class="material-symbols-outlined text-base">expand_less</span>
+</div>
+<div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container" name="duration" type="radio"/>
+<span>Up to 2 hours</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container" name="duration" type="radio"/>
+<span>2-4 hours</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input checked="" class="accent-primary-container" name="duration" type="radio"/>
+<span>Half Day (4-6 hours)</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container" name="duration" type="radio"/>
+<span>Full Day (6+ hours)</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container" name="duration" type="radio"/>
+<span>Multi-day Expedition</span>
+</label>
+</div>
+</div>
+<!-- Price Range Slider -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-label-prominent font-label-prominent text-primary">
+<span>Price Range (USD)</span>
+<span class="text-label-caption font-label-caption text-secondary">$25 - $500+</span>
+</div>
+<div class="px-1 py-2">
+<input class="w-full accent-primary-container cursor-pointer" max="500" min="25" type="range" value="250"/>
+<div class="flex justify-between font-label-caption text-label-caption text-outline mt-1">
+<span>$25</span>
+<span>$250</span>
+<span>$500+</span>
+</div>
+</div>
+</div>
+<!-- Group Type -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-label-prominent font-label-prominent text-primary">
+<span>Group Type</span>
+<span class="material-symbols-outlined text-base">expand_less</span>
+</div>
+<div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input checked="" class="accent-primary-container rounded" type="checkbox"/>
+<span>Small Group (Max 8)</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Private VIP Concierge</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Corporate / Delegation</span>
+</label>
+</div>
+</div>
+<!-- Languages -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-label-prominent font-label-prominent text-primary">
+<span>Languages</span>
+<span class="material-symbols-outlined text-base">expand_less</span>
+</div>
+<div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input checked="" class="accent-primary-container rounded" type="checkbox"/>
+<span>English</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Bahasa Indonesia</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Mandarin</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>Japanese</span>
+</label>
+<label class="flex items-center gap-2 hover:text-primary cursor-pointer py-0.5">
+<input class="accent-primary-container rounded" type="checkbox"/>
+<span>German</span>
+</label>
+</div>
+</div>
+<!-- Ratings -->
+<div class="space-y-2">
+<div class="text-label-prominent font-label-prominent text-primary">Minimum Rating</div>
+<div class="space-y-1 font-body-sm text-body-sm">
+<button class="w-full flex items-center justify-between px-2.5 py-1.5 rounded bg-surface-container-low text-primary font-medium" type="button">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8 &amp; above</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">38</span>
+</button>
+<button class="w-full flex items-center justify-between px-2.5 py-1.5 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-outline" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.5 &amp; above</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">46</span>
+</button>
+<button class="w-full flex items-center justify-between px-2.5 py-1.5 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-outline" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.0 &amp; above</span>
+</span>
+<span class="text-label-caption font-label-caption text-secondary">48</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Main Marketplace Grid Area -->
+<main class="flex-1 w-full space-y-space-md">
+<!-- Top Toolbar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div>
+<span class="font-title-editorial text-title-editorial text-primary font-semibold">Showing 48 curated experiences</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sovereign certified guides, curated private sessions, transparent ticketing</p>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<!-- Sort dropdown -->
+<div class="relative flex items-center">
+<label class="sr-only" for="sort-select">Sort experiences</label>
+<select class="appearance-none bg-surface-container-low text-primary font-label-prominent text-label-prominent py-2 pl-3 pr-8 rounded-lg focus:outline-none cursor-pointer" id="sort-select">
+<option>Recommended</option>
+<option>Top Rated</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest Additions</option>
+</select>
+<span class="material-symbols-outlined text-sm text-on-surface-variant absolute right-2.5 pointer-events-none">expand_more</span>
+</div>
+<!-- View toggle (Grid / Map) -->
+<div class="flex items-center p-1 bg-surface-container-low rounded-lg">
+<button aria-label="Grid View" class="p-1.5 rounded bg-primary text-surface-bright shadow-sm flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-sm">grid_view</span>
+</button>
+<button aria-label="Map View" class="p-1.5 rounded text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">map</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Experience Cards: 3 cards per row, 4 rows (Total 12 cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- Card 1: Jakarta Heritage & Batavia Old Town -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dutch colonial architectural square of Fatahillah in Kota Tua Jakarta with vintage bicycles and grand historic facades under bright tropical daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4JmYTfUxVbPJ8VTRwiY2noYus_S_ZRBk4vcofs1yiZ8Dwk6HinCjkmMWsvVcrtnQLb0fPESe4SB6_eZBWMLU5doBODuRIU8UIE1znLRoju5flu-L0bNpWAnmujmBZZdLX0JIoQa60Obz8monTC3FZSgpv2O70lkxAcqvPOew4tpq4ygKwWzFTkyzq8YPdwPEeMF9fK1-s4ZM-x7ZB2qPQO5dbgsg1-UsHCzeEbUf8SQaXf2nJs0U1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Bestseller
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Jakarta</span>
+<span>·</span>
+<span>4 hours</span>
+<span>·</span>
+<span class="text-surface-tint font-medium">Free cancellation</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Jakarta Heritage &amp; Batavia Old Town Walking Experience
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Stroll through cobblestone squares, centuries-old spice warehouses, and historical VOC landmarks guided by an archivist historian.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(128)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$45</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: Yogyakarta Keraton Royal Court -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Royal Palace of Yogyakarta Keraton with ornate teak wooden pavilions, ancient bronze gamelan instruments and court attendants in traditional batik attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdNPYK0ZwcNltNDoRR58n959YPghV4n_TgT7b6f4ICi6cWOTSGEcu8AZmYK0pqoaETBpbjKOB9YLwtSBAyzMsphETFlk7EUywEzpIFC1zV1RZ6N3d4Tj3ap01BebdGgmTR3k2QSuQz5UvpJ57h9RrTqA4m8uf9Ye-ORrrZm6B5a_9rvI9lUcl3e1ifbTH96-7Bi_gPmhgbrNERoCp_2HTtthY5sZdOVFwVlk_I0JA16JC5gehOe_qp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-tertiary-container text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Cultural Icon
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Yogyakarta</span>
+<span>·</span>
+<span>6 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Yogyakarta Keraton Royal Court &amp; Water Castle Heritage
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Private sovereign clearance into the inner courtyards of Keraton and the secluded underground mosque chambers of Taman Sari.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(96)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$65</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Indonesian Street Food Pasar Baru -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant evening street food market in Pasar Baru Jakarta with sizzling satay grills, fragrant wok flames, spices, and colorful Indonesian culinary delicacies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwdEd90gqV5lvl9Qfx4ORuILBiOwFS9UNMRaHQy_sK5LAXkmSdSHDMoiWU4uCtt5TpZ3J19tH3aml_VL7R93boNaYYFGupq6URyA7XM-YE47LxLps7BEGzaDo4f4NoSCknsaXv4nCKaD0ueom72kt8acZw5Wk96SHpJtVmoTyqHC05lgaaaLW0lW5vlvQzx8RDSM4qOsiiSAn_YcDClsau1SnVAQu01Od3icMFW-pPKt8fl-SgpY3U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-secondary text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Top Rated
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Jakarta</span>
+<span>·</span>
+<span>4 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Indonesian Street Food &amp; Pasar Baru Culinary Discovery
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Tasting tour across heritage food stalls sampling authentic soto Betawi, charcoal-cooked nasi goreng, and heritage Peranakan desserts.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(84)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$55</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4: Traditional Hand-Drawn Canting Batik -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intricate close-up of a Javanese master artisan applying hot natural wax to silk fabric using a brass canting tool in an open-air workshop courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjuPUF4DRzzDELjaCO_Lb-xKeKS4G1gVWEJc5Qtl59pqiFlSYt90dZWjAQlW4Ita61Ic9v6XyGEehFeMXUAg3QVlWG-eN8mAN0W_5J3ZzSNBt0fzdEIdOA1eiVWGkaYTx4PxKeuMV8XMzlGvXMscrTskw3XcA--BSKtcf79-8Sz-W2EzgNPKlT2lSCqD_3sOBAFu2wH52ijOA2RjTs9FYpmyLFbAzgpMFYDFYqnqiwZCRrr5eKD9ov"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Artisan Led
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Yogyakarta</span>
+<span>·</span>
+<span>3 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Traditional Hand-Drawn Canting Batik Masterclass
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Hands-on mentorship in an established royal batik atelier, utilizing natural plant dyes and UNESCO-recognized waxing techniques.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">5.0</span>
+<span class="font-body-sm text-body-sm text-outline">(72)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$40</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 5: Indonesia FMCG Market Discovery -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end modern Indonesian retail mall and modern supermarket distribution floor in central Jakarta with business executives conducting market research" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc411brnTvM7GqBjtmRNlLXcj0GQH_G3DlineX3TdHlPJY5w8yHyIlBUVVzfp_lsgC3Zs0pkAV7CsHIDOO9d24L9TDnLxkSmQQpwMwYdWHOI4DazbdlDp5alKLX__VtO0sTsrxrlMX-K0xxGwLLXo13Z1IFbLhKVfGbYnTpMjju-45qN675G1PR7ExKMbdyh5CeFCGzqTj7XUJySXaRRGdBIW-2l7XWuoE-qm3aimCKfYoR8hXH6rp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-tertiary text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Business Exp
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Jakarta</span>
+<span>·</span>
+<span>1 Day</span>
+<span>·</span>
+<span class="text-tertiary font-medium">B2B Executive</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Indonesia FMCG Market &amp; Modern Retail Benchmarking
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Comprehensive executive briefing and site visits evaluating Indonesian consumer trends, modern trade chains, and supply networks.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(42)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$250</span>
+<span class="font-body-sm text-body-sm text-outline">/ group</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 6: Sunrise Over Borobudur & Candirejo -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Breathtaking dawn light over the ancient stone stupas of Borobudur temple surrounded by lush Javanese rainforest and misty volcanic mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBkTgRccWiB9wZXEpv13UWMZ-6eh2rWkcd-arVpbBZKuqM-fySlstU5SEDSwTE60TNzr_WAL9P8okSC3eDepvBCLyf8HFxcxXcb-kTji8f1YgVvf01YHxyrzgLkS7IX5cl8fOdtaLSDMUxgUSCVs9q9Oa9W8jl1jvzf1KCIsqHXr-OrvceO5do3BP9vdXEPMFnpR_ZR4Yw0nvR4-153NdEihUc-hl8zsxjNrmq83IGEwkWZfhbL3F2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Historic
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Magelang</span>
+<span>·</span>
+<span>7 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Sunrise Over Borobudur &amp; Ancient Candirejo Village
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Exclusive dawn access overlooking the 9th-century Buddhist monument followed by a traditional horse-cart tour of agro-villages.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(115)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$85</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 7: West Java Coffee Farm & Cupping Lab -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Highland specialty Arabica coffee plantation in Bandung West Java with misty green hills and professional barista cupping session with artisanal roast profiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLBCUxNcMIIH1kt27zPYDOEP1_9SbDYAkkkQmtbT3LTa7ebfggVwb6pKHRynee0GRJXRvt_ymGqdRZXjocvt2voslniH6YCsD3SpDwdDCV8RGtzfBtdTHcLHes85Y6UPUuUlFHqFNM-uoJcKeW_YbR356C6zdsIo9zo9B0y4W3itRwBTru8HlXxVKsuvXKBeNywz62NwR5_8zgP-ZeSI8jszcp3Kk3WbgUm5fmVlRkCnKQu-_h_FV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-tint text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Agro Exp
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Bandung Highlands</span>
+<span>·</span>
+<span>8 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  West Java High-Elevation Coffee Farm &amp; Cupping Lab
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Trek cloud forest microlots, observe anaerobic fermentation processes, and participate in an SCA-certified sensory cupping lab.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">5.0</span>
+<span class="font-body-sm text-body-sm text-outline">(38)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$110</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 8: Cirebon Traditional Glass Painting -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional reverse glass painting workshop in Cirebon showing master artisan detailing intricate golden coastal motifs and classical puppets on glass panels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGjeS_q7bVMTv1VZCezchsfH0MK5Q_WUJD7DZFpPR2ahO1x2R-sOfTBPyVhpvCD0SH8dDzmYGAxDKHZ1IuuTg-66gRuv1uBZP506Udk7CH9WU7mTNAX_hGDMPHd61frjM1lfKsJ58m8hK19WPjBs6bgRBoWBNcwqpz10P7FjnGtJKtRBGYOo_J_tcnSh4JMCtVx6wgY_tniN39_jSGbleOJ4tBQeM502Y_zqzxKy0GDENU2N2Niv94"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-secondary text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Heritage
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>West Java</span>
+<span>·</span>
+<span>5 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Cirebon Traditional Glass Painting &amp; Royal Craft
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Discover rare reverse-glass painting techniques developed in Cirebon sultanates, followed by an intimate royal culinary lunch.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(29)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$50</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 9: Indonesian Manufacturing Plant & Logistics Hub -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern advanced automated industrial factory warehouse in Cikarang West Java with clean robotic packaging lines and logistics operations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEhHDr6JoYmCZbjQiYx85fxhqM_ghxZdn-T4vv0KCdINpmaq-pMgiUQnttLj5FWRoV3OdGnU3HfTXJGtcwZsZRpcCftZhB9dB_UlAO-JQjPZrGOGW2T12_WFWCK8n261Qo6l16dqcBBErEkX4UizyIlKdLCUa9GEAofp3VvmwLcf6502vepdDlQLluwVDkRn31AuwckK6Yz6jTceXU29R2l82vVtaB9xtVOrQc6x98Ht_DLdnLO80S"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-tertiary text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Business Exp
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Cikarang / Jakarta</span>
+<span>·</span>
+<span>Half Day</span>
+<span>·</span>
+<span class="text-tertiary font-medium">Site Audit</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Indonesian Manufacturing Plant &amp; Logistics Hub Tour
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Behind-the-scenes industrial corridor visit inspecting high-capacity packaging lines, SEZ export compliance, and cold chain logistics.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(31)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$220</span>
+<span class="font-body-sm text-body-sm text-outline">/ group</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 10: Ubud Sacred Herbalism & Jamu Sanctuary -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Serene Balinese botanical wellness garden in Ubud with fresh turmeric roots, ginger, medicinal tropical plants, and traditional earthen mortar for jamu preparation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7KBrU45QcLEAHSluFNYU3bpn-zyyPy1fmFDLwZkHc0mQQjJF3iq2jm_w-4LD5vYxNDfFro4kEJcNDuKkU-kPgm_7Kql-z6Pl__WpHCb-gKPZt9fGV0THwIuopwew79VoSnk9dufP1rCx9nDtELocRKh7-XJ0N4LGmzQlrNGX_fDiQevemJOrKwrUJQQ0RlVXWcjXWMwmUntlI8WXiPNWDSRRE6ZraS5U3cU7zB2IE96C-OEI-GzMm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Wellness
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Bali</span>
+<span>·</span>
+<span>3.5 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Ubud Sacred Herbalism &amp; Jamu Making Sanctuary
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Holistic immersion in Balinese Usada herbal pharmacology, hand-pressing tonic elixirs with organic botanicals harvested on-site.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(88)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$48</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 11: Pasar Modern Distribution & Wholesale Trade -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Early morning bustling wholesale produce distribution market in BSD Tangerang near Jakarta with neat tiers of tropical spices, fresh produce and merchant logistics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD32Qee4_Yu06dk8kSk0i3UgknU089mh_JMHsEk_Xt5sKdhhDzQaGNX_4fCnjQdh0BCSPNz8zB2R2u082TIncLpkeGdm-mfkWaf5GVnwZkbDH5OPHaWItG7-Z3faZ0Lw6CNkipL6R2WxioM2vh8C5Uy2G25-vLWhy8WvakKvVaXojXBJla7bTY1TpAGgmFodBFdaO3S7H1She2wC3fE3i7Pcux2WqQmKLw4mqf6-g-biLjKZPLaRCMd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-tertiary text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Business Exp
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Jakarta</span>
+<span>·</span>
+<span>4 hours</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Traditional Pasar Modern Distribution &amp; Wholesale Trade
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Understand Indonesia's decentralized wet market distribution architecture and how venture-backed logistics integrate with tier-1 brokers.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(27)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$180</span>
+<span class="font-body-sm text-body-sm text-outline">/ group</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 12: Flores Manggarai Cultural Village -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dramatic high aerial perspective of the spider-web shaped communal rice fields of Cancar in Flores surrounded by cone-shaped traditional Manggaraian houses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzjVfuanihVFB6t5BHzsChbOt6gy4hbMPV-HeKm7JfX2UM0Fyz5DuayQvkVbIRmfEdCaAk8eEuauYvq0aKLoXcvgjt2GNgjUyQJZ5F1lfKM0ckWZy9vO_QjPh7rva96LvjvTSmy_TvKf8rfs3jasjRfk7DUdShiL7XmCEwv35PMICB3QzqshFhtmLevFS5o260vQpddS-3ICGgzxCQwvz_zVzTTT_tgFKiOraAI5_wMNmrKAmqiTRe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-60"></div>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container text-surface-bright font-label-caption text-label-caption uppercase tracking-wider font-semibold shadow-sm">
+                Immersive
+              </span>
+<button aria-label="Save experience" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-surface-bright transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between space-y-space-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-1.5 font-label-caption text-label-caption text-secondary uppercase tracking-wider">
+<span>Ruteng, Flores</span>
+<span>·</span>
+<span>Full Day</span>
+</div>
+<h2 class="font-title-editorial text-title-editorial text-primary group-hover:text-primary-container transition-colors line-clamp-2">
+                  Flores Manggarai Cultural Village &amp; Spider-Web Rice Fields
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Encounter ancient Lingko customary land tenure systems and traditional drum houses with Manggarai tribal clan elders.
+                </p>
+</div>
+<div class="pt-space-xs flex items-end justify-between">
+<div class="flex items-center gap-1 font-label-prominent text-label-prominent text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">5.0</span>
+<span class="font-body-sm text-body-sm text-outline">(46)</span>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline uppercase block">From</span>
+<span class="font-currency-display text-currency-display text-primary font-bold">US$95</span>
+<span class="font-body-sm text-body-sm text-outline">/ person</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination Bar -->
+<nav aria-label="Page navigation" class="mt-space-xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="font-label-caption text-label-caption uppercase tracking-wider text-on-surface-variant">
+            Page 1 of 4 <span class="text-outline">· 48 Experiences</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-current="page" class="w-10 h-10 rounded-lg bg-primary text-surface-bright font-label-prominent text-label-prominent flex items-center justify-center shadow-sm" type="button">
+              1
+            </button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-prominent text-label-prominent flex items-center justify-center transition-colors" type="button">
+              2
+            </button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-prominent text-label-prominent flex items-center justify-center transition-colors" type="button">
+              3
+            </button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-prominent text-label-prominent flex items-center justify-center transition-colors" type="button">
+              4
+            </button>
+<button class="px-4 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-prominent text-label-prominent flex items-center gap-1 transition-colors" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</nav>
+<!-- Trust & Sovereign Guarantee Block -->
+<div class="mt-space-lg p-space-md md:p-space-lg bg-secondary-container/40 rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container text-surface-bright flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">verified</span>
+</div>
+<div>
+<h3 class="font-label-prominent text-label-prominent text-primary uppercase tracking-wide">
+                VisitIndonesia Sovereign Booking Guarantee
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+                Guaranteed English-speaking hosts, verified safety standards, transparent local pricing, and 24/7 dedicated concierge assistance across all archipelago provinces.
+              </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm">
+<span class="font-label-caption text-label-caption text-primary uppercase font-bold tracking-widest px-3 py-1.5 rounded bg-surface-bright shadow-sm">
+              Zero Hidden Fees
+            </span>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-3xl"><div class="w-full px-margin-mobile md:px-margin-tablet xl:px-margin-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 space-y-space-md pr-space-md"><div class="flex items-center gap-space-sm"><img alt="VisitIndonesia.co.id Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrhSACeSFzbdf5G-Zt43WTOZohH28QGQEun4T5dDQZ4aOOKTQywVvH5bnu9EUJWIWfnz9wPXPDxIzunKBbOfOOeC5TvssOijNhZsNlUMTpxsbngeUGHl_SY-9et4n37A65v1SUZVzCHe_fDW03vxCo8i0A-JWtgbwMo3OcWwwv7au2ga_FHCwkOQP3M-dv64sK_rDblY1J-Rdmh28tHTicaqo56VpuuoSsvDHn5vW7GmM2GGHS-s3rqQ"/><span class="font-title-editorial text-title-editorial tracking-tight text-primary font-semibold">VISITINDONESIA<span class="text-tertiary-container font-body-sm text-body-sm align-super text-xs font-bold">.CO.ID</span></span></div><p class="font-title-editorial text-title-editorial italic text-primary-container max-w-sm">Experience Indonesia beyond the ordinary.</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-md">The premier sovereign marketplace connecting discerning global travelers, accredited institutional investors, and strategic venture builders to sovereign Indonesian opportunities and private expeditions.</p><div class="pt-space-sm space-y-space-xs"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-caption text-label-caption"><span class="material-symbols-outlined text-base text-primary">verified</span><span>BKPM &amp; KEMENPAREKRAF REGISTERED PARTNER</span></div><div class="flex items-center gap-space-sm text-on-surface-variant font-label-caption text-label-caption"><span class="material-symbols-outlined text-base text-primary">support_agent</span><span>24/7 DIPLOMATIC &amp; EXECUTIVE DESK · JAKARTA &amp; BALI</span></div></div></div><div class="space-y-space-md"><h3 class="font-label-prominent text-label-prominent text-primary uppercase tracking-widest">Explore</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="experiences" href="/experiences">Experiences</a></li><li><a class="hover:text-primary transition-colors" data-path="destinations" href="/#destinations">Destinations</a></li><li><a class="hover:text-primary transition-colors" data-path="curated-categories" href="/experiences">Categories</a></li><li><a class="hover:text-primary transition-colors" data-path="batavia-heritage" href="/jakarta-heritage">Batavia &amp; Heritage</a></li><li><a class="hover:text-primary transition-colors" data-path="culinary-journeys" href="/experiences">Culinary Journeys</a></li><li><a class="hover:text-primary transition-colors" data-path="coffee-expeditions" href="/experiences">Coffee Expeditions</a></li></ul></div><div class="space-y-space-md"><h3 class="font-label-prominent text-label-prominent text-primary uppercase tracking-widest">Business</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="business" href="/business">Business Experiences</a></li><li><a class="hover:text-primary transition-colors" data-path="fmcg-retail-discovery" href="/fmcg-market">FMCG &amp; Retail Discovery</a></li><li><a class="hover:text-primary transition-colors" data-path="manufacturing-visits" href="/business">Manufacturing Visits</a></li><li><a class="hover:text-primary transition-colors" data-path="market-entry" href="/business#consultation-form">Market Entry Advisory</a></li><li><a class="hover:text-primary transition-colors" data-path="partner-verification" href="/business#consultation-form">Partner Verification</a></li><li><a class="hover:text-primary transition-colors" data-path="supplier-matching" href="/business#consultation-form">Supplier Matching</a></li></ul></div><div class="space-y-space-md"><h3 class="font-label-prominent text-label-prominent text-primary uppercase tracking-widest">Company</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about-us" href="/">About Us</a></li><li><a class="hover:text-primary transition-colors" data-path="become-partner" href="/business#consultation-form">Become a Partner</a></li><li><a class="hover:text-primary transition-colors" data-path="press-stories" href="/">Press &amp; Stories</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="/business#consultation-form">Contact &amp; Inquiries</a></li><li><a class="hover:text-primary transition-colors" data-path="faq" href="/">FAQ</a></li></ul></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex flex-wrap items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="terms-of-service" href="/">Terms of Service</a><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="/">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="booking-guarantee" href="/">Booking Guarantee</a><a class="hover:text-primary transition-colors" data-path="cancellation-terms" href="/">Cancellation Terms</a></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-caption text-label-caption"><span class="material-symbols-outlined text-base">public</span><span>ENGLISH (US)</span><span>·</span><span>USD ($)</span></div><p class="font-label-caption text-label-caption text-on-surface-variant">© 2025 VisitIndonesia.co.id. All rights reserved.</p></div></div></div></footer></body></html>

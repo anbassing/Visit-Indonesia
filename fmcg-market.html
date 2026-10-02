@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "on-tertiary-fixed": "#380d00", "on-tertiary-container": "#e2805c", "tertiary": "#3b0e00", "surface-tint": "#476556", "secondary-container": "#dae6d1", "secondary-fixed": "#dae6d1", "outline-variant": "#c2c8c2", "on-surface": "#1b1c1a", "surface-dim": "#dbdad6", "tertiary-container": "#5e1c01", "surface-bright": "#fbf9f5", "on-primary": "#ffffff", "surface-container-high": "#eae8e4", "surface": "#fbf9f5", "primary-container": "#1b382b", "surface-container-low": "#f5f3ef", "surface-variant": "#e4e2de", "inverse-on-surface": "#f2f0ed", "outline": "#727974", "on-secondary-fixed-variant": "#3f4a3a", "error": "#ba1a1a", "secondary-fixed-dim": "#becab6", "on-secondary-fixed": "#151e11", "tertiary-fixed-dim": "#ffb59b", "primary": "#042217", "on-surface-variant": "#424844", "on-background": "#1b1c1a", "on-tertiary": "#ffffff", "surface-container": "#efeeea", "on-primary-fixed": "#022015", "surface-container-lowest": "#ffffff", "on-secondary-container": "#5d6857", "inverse-primary": "#adcebc", "inverse-surface": "#30312e", "on-primary-container": "#82a291", "primary-fixed": "#c9ead7", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#7a3012", "background": "#fbf9f5", "primary-fixed-dim": "#adcebc", "on-primary-fixed-variant": "#304d3f", "surface-container-highest": "#e4e2de", "on-error": "#ffffff", "tertiary-fixed": "#ffdbcf", "on-error-container": "#93000a", "secondary": "#576251" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "6rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-2xl": "4rem", "margin-tablet": "2.5rem", "margin": "1.5rem", "margin-desktop": "5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl-mobile": [ "Playfair Display" ], "headline-xl": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "display-hero-mobile": [ "Playfair Display" ], "headline-md": [ "Playfair Display" ], "title-editorial": [ "Playfair Display" ], "currency-display": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-prominent": [ "Plus Jakarta Sans" ], "display-hero": [ "Playfair Display" ], "label-caption": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ] }, "fontSize": { "headline-xl-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-hero-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "500" } ], "title-editorial": [ "20px", { "lineHeight": "28px", "fontWeight": "500" } ], "currency-display": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-prominent": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-caption": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" } ] } } } };</script><meta content="#042217" name="theme-color"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(27,56,43,0.04)]"><div class="h-20 w-full px-margin-mobile md:px-margin-tablet xl:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="/"><img alt="VisitIndonesia.co.id Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrhSACeSFzbdf5G-Zt43WTOZohH28QGQEun4T5dDQZ4aOOKTQywVvH5bnu9EUJWIWfnz9wPXPDxIzunKBbOfOOeC5TvssOijNhZsNlUMTpxsbngeUGHl_SY-9et4n37A65v1SUZVzCHe_fDW03vxCo8i0A-JWtgbwMo3OcWwwv7au2ga_FHCwkOQP3M-dv64sK_rDblY1J-Rdmh28tHTicaqo56VpuuoSsvDHn5vW7GmM2GGHS-s3rqQ"/><span class="font-title-editorial text-title-editorial tracking-tight text-primary font-semibold hidden sm:inline-block">VISITINDONESIA<span class="text-tertiary-container font-body-sm text-body-sm align-super text-xs font-bold">.CO.ID</span></span></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-label-prominent text-label-prominent border-b-2 border-primary-container pb-1"><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors" data-path="explore" href="/experiences">Explore</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors" data-path="destinations" href="/#destinations">Destinations</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors" data-path="experiences" href="/experiences">Experiences</a><a class="font-label-prominent text-label-prominent text-on-surface-variant hover:text-primary transition-colors" data-path="business" href="/business">Business</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">search</span></button><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-caption text-label-caption uppercase tracking-wider"><button class="hover:text-primary transition-colors flex items-center gap-0.5" type="button"><span>EN</span><span class="material-symbols-outlined text-xs">expand_more</span></button><span class="text-outline-variant">·</span><button class="hover:text-primary transition-colors flex items-center gap-0.5" type="button"><span>USD</span><span class="material-symbols-outlined text-xs">expand_more</span></button></div><a class="hidden sm:inline-flex items-center justify-center px-space-md py-2.5 rounded-lg bg-primary-container text-surface-bright font-label-prominent text-label-prominent hover:bg-primary transition-all shadow-[0_2px_8px_-2px_rgba(27,56,43,0.1)]" data-path="plan-experience" href="/experiences">Plan Your Experience</a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNl4kt1NO-VN8WEeE03a3Mz8Tco8aXEv_-FEa6NeiuFZ-6T8zepoffAEfyNgUSqkom_kmAzSqQyVQCbOCzJ0N8rQLre2l6Uw1rQT7BpDQ58IVHa0iq5q6PscbePJfi8OMCTxaXCdfPaMNfMvQCfJeLqV5vsicAsPHlTdF5ZESHmkFqNdYzcaQtnwmpH-3lLZ_XU4FWlh4oZHNVldyoRM3G2t0mJ-QfJJ7MqVCFD0KJerpLKI8JRgoc"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Sovereign Regulatory Micro-Bar -->
+<section class="w-full bg-surface-container-low py-space-sm px-margin-mobile md:px-margin-tablet xl:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs text-on-surface-variant font-label-caption text-label-caption">
+<div class="flex items-center gap-space-xs flex-wrap">
+<a class="hover:text-primary transition-colors uppercase tracking-widest" data-path="home" href="/">Indonesia</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors uppercase tracking-widest" data-path="business" href="/business">Business Experiences</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors uppercase tracking-widest" data-path="fmcg-retail-discovery" href="/fmcg-market">FMCG &amp; Retail</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold truncate max-w-[200px] sm:max-w-none uppercase tracking-widest">Indonesia FMCG Market Discovery</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-caption text-label-caption uppercase tracking-wider text-secondary">
+<span class="inline-flex items-center gap-1 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+          BKPM &amp; KEMENPAREKRAF ACCREDITED
+        </span>
+<span class="text-outline-variant">·</span>
+<span>ID-B2B-EXP-0881</span>
+</div>
+</div>
+</section>
+<!-- Editorial Executive Hero Header -->
+<header class="w-full bg-surface py-space-xl px-margin-mobile md:px-margin-tablet xl:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto space-y-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-3 py-1 rounded-sm bg-primary-container text-surface-bright font-label-caption text-label-caption tracking-widest uppercase">
+          Business Field Experience
+        </span>
+<span class="px-3 py-1 rounded-sm bg-surface-container-high text-on-surface-variant font-label-caption text-label-caption tracking-widest uppercase">
+          Executive Immersion
+        </span>
+<span class="px-3 py-1 rounded-sm bg-tertiary-fixed text-on-tertiary-fixed font-label-caption text-label-caption tracking-widest uppercase font-semibold">
+          Sector Briefing · Jakarta
+        </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 space-y-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-primary font-headline-xl tracking-tight leading-none">
+            See How Indonesia’s FMCG Market Works
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+            A 1-day executive immersion exploring Southeast Asia’s most dynamic consumer market through modern trade, traditional warungs, high-velocity route-to-market hubs, and direct local FMCG leadership debriefing.
+          </p>
+</div>
+<div class="lg:col-span-4 flex lg:justify-end">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs w-full sm:w-auto">
+<div class="flex items-center gap-space-xs text-primary font-label-prominent text-label-prominent">
+<span class="material-symbols-outlined text-base text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.9</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(42 corporate reviews)</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base text-primary">location_on</span>
+<span>Jakarta &amp; Greater Jakarta</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base text-primary">schedule</span>
+<span>1 Day (8 Hours) · English-speaking Specialist</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Editorial Asymmetric Photography Bento Grid -->
+<section class="w-full px-margin-mobile md:px-margin-tablet xl:px-margin-desktop pb-space-xl">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-space-sm h-[480px] md:h-[520px]">
+<!-- Primary Feature Frame: Modern Hypermarket Retail Aisle -->
+<div class="md:col-span-6 relative h-full rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern upscale supermarket aisle in Jakarta Indonesia, bright pristine display shelves packed with packaged consumer foods, beverage bottles, clean architectural perspective, warm soft retail lighting, editorial commercial photography in deep forest tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj1JupGXYBBlN6gnjiPVaDWkDrw9XmfSANcU4QmM41at0yc14Zps8ifSAbbNeNTdC3azCwr_nmEkTcShhsTlMwcsrxWOzUWOrwDVwedFvnLXA-C7RWFK94RVh23OTrdrE_CikgaoqpI7AIfu4qOYvbdlEff-AasxcKiB0lt_jvcQrkqzbS3E1zt5og3vKvZSx4ntAMWHqFF6N3ZiTLX-vPFpo2qOCDed4y4xah_uYE-4cQDlPTbJWq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-caption text-label-caption uppercase tracking-wider text-surface-tint text-surface-bright">Pillar 01 · Modern Channel</span>
+<p class="font-title-editorial text-title-editorial text-surface-bright font-medium">Hypermarket &amp; Proximity Mini-mart Audits</p>
+</div>
+</div>
+<!-- Secondary Quad Right Container -->
+<div class="md:col-span-6 grid grid-cols-2 gap-space-sm h-full">
+<!-- Pasar Modern / Traditional Trade -->
+<div class="relative rounded-xl overflow-hidden group shadow-sm col-span-2 sm:col-span-1 h-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Traditional Indonesian market pasar and neighborhood warung wholesale tier with stacked woven baskets, packaged dry goods, soft atmospheric morning light filtering through wooden rafters, documentary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYg-pGmWcP_KsU6ef-FoICwr7J-0IxDq2yfjY18fNhTKY_yAQ6L76JhotRrL2sYDU1yOKIOVKa9vcuQg1BMEW2KMMbnLbvRP_Mm_ZEk2q9YY7UEYB7cMW1Kv-zR6vGeHlm9HSg1NK7128mWi91SSr2SEDNHn1HN6PgubTX2F4jbfV7hGMXgVabnf1sIe5BBnwdReOAUPkI1Ux8tiv3Gthn8xddxGSA9SHDpLyNAitu8e8Iu2XJnKrW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-sm">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-primary-fixed">Traditional Wholesale</span>
+<p class="font-label-prominent text-label-prominent text-surface-bright truncate">Warung Ecosystem Route</p>
+</div>
+</div>
+<!-- Consumer Route-to-Market Warehouse -->
+<div class="relative rounded-xl overflow-hidden group shadow-sm col-span-2 sm:col-span-1 h-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Jakarta high-velocity urban logistics staging center, commercial fleet vans loading consumer packaged goods, disciplined operations with morning haze, industrial elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFUwX7WDkRN4ufPUzpVo4P2W-y-UeYSFEJSmH2SYgJeL4-aTTVk5x74DYAQli5_GwaqbcaOGUAv8YmOxxSjaGo0869tXiEWHxAnYuc_6K2J5K5eRdlB5-lixQi_fdn9csA-3IhXevgWoHGKJe-tOThUUm-R8TWNi2T0cMtqZ18LZv1e1YY5919hA9EEe-0mOhL161ZhlkSWLOhoCZbX7iQSvaNzS-aIXInYY-EbYk_7HOAitUNTW5-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-sm">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-primary-fixed">Cold Chain &amp; Logistics</span>
+<p class="font-label-prominent text-label-prominent text-surface-bright truncate">Urban Distribution Staging</p>
+</div>
+</div>
+<!-- Executive Debriefing Room -->
+<div class="relative rounded-xl overflow-hidden group shadow-sm col-span-2 h-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek private boardroom lounge in Jakarta SCBD financial district, panoramic floor-to-ceiling glass looking onto skyline, dark teak table, leather executive chairs, warm editorial morning coffee briefing setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0kOlmQOLzKOv_eJT9BgTaEZtZjKet9Dtw-EUi1PxnNFpY35vpWChZAgUXqycP38CsVSpLnY5aknxx683T3sWVIOPlcjABOb2FgXX7YVSzUvuPaJPKMeXnbarYFYthUPhJFN3X2OYh7kwqWWEHdmKoIlxp9B-MrBp948_OYOBkVhXsljYgln_YhmXHb3trf7Rc6zOL1OALKSLfItylQZJY5YzqyBIbkEUWnBOvyqLwYVeFUKGV23W4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-tertiary-fixed">Executive Dialogue</span>
+<p class="font-title-editorial text-title-editorial text-surface-bright">Private Roundtable with Indonesian FMCG C-Suite</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Macro Stats Banner Strip (Data Visualization Bar) -->
+<section class="w-full bg-primary text-surface-bright py-space-lg px-margin-mobile md:px-margin-tablet xl:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-space-md items-center">
+<div class="space-y-1">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-primary-fixed">Market Scale</span>
+<div class="font-headline-lg text-headline-lg font-bold text-surface-bright">278M+</div>
+<p class="font-body-sm text-body-sm text-surface-container-highest">4th largest population globally</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-primary-fixed">Traditional Trade</span>
+<div class="font-headline-lg text-headline-lg font-bold text-tertiary-fixed-dim">62.4%</div>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Retail FMCG volume via Warungs</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-primary-fixed">Proximity Mini-Marts</span>
+<div class="font-headline-lg text-headline-lg font-bold text-surface-bright">42,000+</div>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Indomaret &amp; Alfamart network</p>
+</div>
+<div class="space-y-1">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-primary-fixed">Sector CAGR</span>
+<div class="font-headline-lg text-headline-lg font-bold text-primary-fixed">+8.7%</div>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Annual premium CPG growth rate</p>
+</div>
+</div>
+</section>
+<!-- Main Dual-Column Canvas -->
+<main class="w-full py-space-2xl px-margin-mobile md:px-margin-tablet xl:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Immersion Blueprint & Insights (65% -> 8 cols) -->
+<article class="lg:col-span-8 space-y-space-2xl">
+<!-- Section 1: Executive Overview -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h2 class="font-label-prominent text-label-prominent uppercase tracking-widest text-primary">Executive Landscape Briefing</h2>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">
+            Demystifying Southeast Asia’s Premier Consumer Battlefield
+          </h3>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+              Indonesia’s FMCG sector is powered by 275+ million consumers, a surging urban middle class, and an intricate, dual-retail architecture where informal <span class="font-semibold text-primary">traditional trade (warungs)</span> commands over 60% of total commercial volume, while modern convenience retail chains (<span class="font-semibold text-primary">Indomaret &amp; Alfamart</span>) rule urban proximity touchpoints.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              For multinational brand heads, private equity operators, and consumer manufacturers, spreadsheet analyses fail to capture the nuances of Indonesian route-to-market dynamics. This field experience puts executives inside actual supply junctions, shelf-space battlegrounds, cold-chain corridors, and candid boardroom discussions with leaders who navigate BPOM compliance and national distributor networks every day.
+            </p>
+<!-- Inline SVG Infographic: Dual Distribution Topology -->
+<div class="pt-space-sm">
+<span class="font-label-caption text-label-caption uppercase tracking-wider text-secondary block mb-2">Route-to-Market Topology (Volume Split)</span>
+<div class="w-full bg-surface-container-high rounded-lg p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full md:w-auto">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="62, 100" stroke-linecap="round" stroke-width="3.8"></path>
+<text class="font-bold text-[8px] text-center" fill="#042217" text-anchor="middle" x="18" y="20.35">62%</text>
+</svg>
+<div>
+<h4 class="font-label-prominent text-label-prominent text-primary">Traditional Warung Trade</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tier-1 &amp; Tier-2 sub-distributors, cash sales, localized sachet packing</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full md:w-auto">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8"></path>
+<path class="text-on-tertiary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="38, 100" stroke-linecap="round" stroke-width="3.8"></path>
+<text class="font-bold text-[8px] text-center" fill="#5e1c01" text-anchor="middle" x="18" y="20.35">38%</text>
+</svg>
+<div>
+<h4 class="font-label-prominent text-label-prominent text-primary">Modern Organized Trade</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Central warehousing, listing fee structures, endcap promos &amp; ERP integrations</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: What You'll Experience (4 Core Pillars) -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h2 class="font-label-prominent text-label-prominent uppercase tracking-widest text-primary">The 4 Immersion Pillars</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Pillar 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption font-bold text-primary-container uppercase tracking-wider">Pillar 01</span>
+<span class="material-symbols-outlined text-primary-container">storefront</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary font-semibold">
+                  Modern Retail Benchmarking
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Conduct guided shelf audits across Alfamart, Indomaret, Grand Lucky, and premium superstores. Evaluate shelf-share strategies, listing fees, tiered pricing structures, local sachet-economy packing formats, and eye-level endcap promotions.
+                </p>
+</div>
+<div class="pt-space-xs border-t-0 flex items-center gap-space-xs text-secondary font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span>Includes Price Tiering Comparison Sheet</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption font-bold text-tertiary-container uppercase tracking-wider">Pillar 02</span>
+<span class="material-symbols-outlined text-tertiary-container">shopping_bag</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary font-semibold">
+                  Traditional Trade &amp; Warung Dynamics
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Visit neighborhood distribution nodes and Pasar Modern hubs. Unpack how goods move from Tier-1 sub-agents on motorbikes to over 3.5 million micro-shops nationwide that still serve as the economic lifeblood of Indonesian daily living.
+                </p>
+</div>
+<div class="pt-space-xs border-t-0 flex items-center gap-space-xs text-secondary font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span>Direct Warung Merchant Interviews</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption font-bold text-primary uppercase tracking-wider">Pillar 03</span>
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary font-semibold">
+                  Route-to-Market &amp; Cold Chain Logistics
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Examine warehouse staging, multi-island shipping buffers, last-mile motorbike fleet dispatch, and cold chain integrity designed for high-density tropical urban environments with extreme traffic constraints.
+                </p>
+</div>
+<div class="pt-space-xs border-t-0 flex items-center gap-space-xs text-secondary font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span>On-site Logistics Hub Inspection</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md transition-all hover:shadow-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption font-bold text-surface-tint uppercase tracking-wider">Pillar 04</span>
+<span class="material-symbols-outlined text-primary-container">groups</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-primary font-semibold">
+                  Executive Debriefing &amp; Advisory
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Conclude with a private 90-minute closed-door roundtable in SCBD with an active Indonesian FMCG executive. Address BPOM regulatory compliance, Halal certification transitions, distribution contract models, and consumer shifts.
+                </p>
+</div>
+<div class="pt-space-xs border-t-0 flex items-center gap-space-xs text-secondary font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span>Under NDA &amp; Tailored to Your Category</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Who It's For -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h2 class="font-label-prominent text-label-prominent uppercase tracking-widest text-primary">Target Audience &amp; Delegations</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-2xl shrink-0 mt-0.5">business_center</span>
+<div>
+<h4 class="font-label-prominent text-label-prominent text-on-surface">FMCG Brand Leaders &amp; CPG Executives</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global category directors testing shelf viability, margin architectures, and packaging formats for Indonesia.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-2xl shrink-0 mt-0.5">query_stats</span>
+<div>
+<h4 class="font-label-prominent text-label-prominent text-on-surface">Private Equity &amp; Consumer Analysts</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Due diligence teams assessing consumer brands, distribution assets, and emerging local challengers.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-2xl shrink-0 mt-0.5">flight_takeoff</span>
+<div>
+<h4 class="font-label-prominent text-label-prominent text-on-surface">Market Entry &amp; Expansion Taskforces</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Corporate venturing teams defining go-to-market roadmaps, distributor shortlists, and Halal timetables.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-2xl shrink-0 mt-0.5">shopping_cart_checkout</span>
+<div>
+<h4 class="font-label-prominent text-label-prominent text-on-surface">E-Commerce &amp; Quick-Commerce Operators</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Digital platform founders evaluating dark stores, proximity fulfillment, and modern trade integration.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Structured Day Itinerary -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h2 class="font-label-prominent text-label-prominent uppercase tracking-widest text-primary">Structured Day Itinerary</h2>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<ol class="space-y-space-lg relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Item 1 -->
+<li class="relative pl-8 space-y-1">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-bright"></span>
+<div class="flex flex-wrap items-baseline gap-space-xs">
+<span class="font-label-prominent text-label-prominent text-primary font-bold">08:30 AM</span>
+<span class="font-title-editorial text-title-editorial text-on-surface font-semibold">Executive Breakfast &amp; Macro Briefing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  SCBD Jakarta private salon. Receive your printed Indonesian FMCG Market Intelligence Dossier; orientation with your senior sector consultant host.
+                </p>
+</li>
+<!-- Item 2 -->
+<li class="relative pl-8 space-y-1">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-bright"></span>
+<div class="flex flex-wrap items-baseline gap-space-xs">
+<span class="font-label-prominent text-label-prominent text-primary font-bold">09:30 AM</span>
+<span class="font-title-editorial text-title-editorial text-on-surface font-semibold">Modern Mini-Mart &amp; Hypermarket Shelf Audit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Dual-store walk: Indomaret/Alfamart proximity store followed by a high-end flagship supermarket (Grand Lucky / Ranch Market) evaluating SKU allocations, price points, and premium imports.
+                </p>
+</li>
+<!-- Item 3 -->
+<li class="relative pl-8 space-y-1">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-bright"></span>
+<div class="flex flex-wrap items-baseline gap-space-xs">
+<span class="font-label-prominent text-label-prominent text-primary font-bold">11:30 AM</span>
+<span class="font-title-editorial text-title-editorial text-on-surface font-semibold">Traditional Wholesale &amp; Warung Merchant Deep-Dive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  On-ground visit to an active Pasar Modern wholesale distributor. Witness credit cycles, cash-and-carry trade, and interview neighborhood warung store owners.
+                </p>
+</li>
+<!-- Item 4 -->
+<li class="relative pl-8 space-y-1">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-tertiary-container ring-4 ring-surface-bright"></span>
+<div class="flex flex-wrap items-baseline gap-space-xs">
+<span class="font-label-prominent text-label-prominent text-tertiary-container font-bold">01:00 PM</span>
+<span class="font-title-editorial text-title-editorial text-on-surface font-semibold">Executive Networking Lunch</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Curated business lunch at a top culinary venue (Plataran Menteng or equivalent) with informal discussion on local consumer tastes and culinary retail habits.
+                </p>
+</li>
+<!-- Item 5 -->
+<li class="relative pl-8 space-y-1">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-bright"></span>
+<div class="flex flex-wrap items-baseline gap-space-xs">
+<span class="font-label-prominent text-label-prominent text-primary font-bold">02:30 PM</span>
+<span class="font-title-editorial text-title-editorial text-on-surface font-semibold">FMCG Distribution Staging Hub &amp; Cold Chain Inspection</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Direct observation of Greater Jakarta logistics dispatch, freight consolidators, temperature-controlled staging, and FMCG master distributors.
+                </p>
+</li>
+<!-- Item 6 -->
+<li class="relative pl-8 space-y-1">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-bright"></span>
+<div class="flex flex-wrap items-baseline gap-space-xs">
+<span class="font-label-prominent text-label-prominent text-primary font-bold">04:30 PM</span>
+<span class="font-title-editorial text-title-editorial text-on-surface font-semibold">Private Executive Roundtable &amp; Q&amp;A Session</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Closed-door dialogue with an active Indonesian FMCG VP/Director. Frank exchange on distributor payment terms, BPOM testing backlogs, and real marketing ROI.
+                </p>
+</li>
+<!-- Item 7 -->
+<li class="relative pl-8 space-y-1">
+<span class="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary-container ring-4 ring-surface-bright"></span>
+<div class="flex flex-wrap items-baseline gap-space-xs">
+<span class="font-label-prominent text-label-prominent text-primary-container font-bold">05:30 PM</span>
+<span class="font-title-editorial text-title-editorial text-on-surface font-semibold">Synthesis &amp; Strategic Dossier Handover</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Summary recap, actionable contact network sheet, post-visit advisory roadmap, and return to your Jakarta hotel in dedicated executive transport.
+                </p>
+</li>
+</ol>
+</div>
+</section>
+<!-- Section 5: Included in Package -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h2 class="font-label-prominent text-label-prominent uppercase tracking-widest text-primary">Inclusions &amp; Sovereign Hospitality</h2>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-high/50 grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<div>
+<p class="font-label-prominent text-label-prominent text-primary">Bilingual Senior FMCG Sector Host</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">15+ years experience in Indonesian trade distribution and CPG brand operations.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<div>
+<p class="font-label-prominent text-label-prominent text-primary">Private Executive Luxury Vehicle &amp; Chauffeur</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dedicated Toyota Alphard or equivalent throughout the entire 8-hour schedule.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<div>
+<p class="font-label-prominent text-label-prominent text-primary">Full Site Access Clearances &amp; Merchant Meetings</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pre-arranged permissions across private distribution depots, wholesalers, and retail chains.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<div>
+<p class="font-label-prominent text-label-prominent text-primary">Comprehensive FMCG Market Dossier</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Detailed 80-page analytical report including distributor contacts, BPOM guides, and channel margins.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<div>
+<p class="font-label-prominent text-label-prominent text-primary">All Gourmet Meals &amp; VIP Lounge Access</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Executive breakfast, Indonesian fine-dining luncheon, specialty coffees, and refreshments.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<div>
+<p class="font-label-prominent text-label-prominent text-primary">Post-Immersion 1-on-1 Virtual Consultation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Complimentary 45-minute follow-up session for specific distributor introductions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Context Card with Google Maps Hook -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<h2 class="font-label-prominent text-label-prominent uppercase tracking-widest text-primary">Immersion Corridor Map</h2>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-space-sm">
+<div class="w-full h-72 bg-cover bg-center rounded-lg relative overflow-hidden" data-location="SCBD, Jakarta, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClWkRU8Vfd97fbrPbSMQTZ1w0Q3iukAh2eGYQvEtc_ojLGJU4FUYY8nmNmSmwK1eWqz9qjU9_qdfmsRP4YpgEfIhA-8kODNBDl8FXWikwEy7OtpRF2A6MoJli7QOcI6B4d_oy6nWRB4no1km8oyq1CGaItNIoJmmjQq_gzdvtsJ_Ip5fg7rgf9iqcNtpHBrJP2TgoYK6h9k7TzE9euAYIH87SejjaUuCMTP0TBLZnFtgxXArVMHHYH')">
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-md text-on-surface font-label-caption text-label-caption flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-sm text-primary">pin_drop</span>
+<span>Starting Point: SCBD Pacific Place / Senayan Corridor</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Route covers Central Jakarta, South Jakarta (SCBD &amp; Pasar Santa / Pasar Mayestik), and key logistics staging depots along the West Jakarta / Tangerang industrial fringe.
+            </p>
+</div>
+</section>
+</article>
+<!-- Right Column: Sticky Corporate Booking & Inquiry Card (35% -> 4 cols) -->
+<aside class="lg:col-span-4 sticky top-24 space-y-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md space-y-space-md">
+<!-- Price Tag Lockup -->
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption uppercase tracking-wider text-secondary">Private Executive Delegation</span>
+<span class="px-2 py-0.5 rounded-sm bg-secondary-container text-on-secondary-container font-label-caption text-label-caption font-semibold">ALL-INCLUSIVE</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">From US$250</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ group (up to 4 delegates)</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Custom corporate sizing and institutional scoping available upon request.</p>
+</div>
+<!-- Quick Selection Form -->
+<form class="space-y-space-md" id="experience-booking-form">
+<!-- Preferred Date Picker -->
+<div class="space-y-1.5">
+<label class="block font-label-prominent text-label-prominent text-on-surface">Target Experience Date</label>
+<div class="relative">
+<input class="w-full h-12 px-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" type="date" value="2025-05-15"/>
+</div>
+</div>
+<!-- Delegation Size -->
+<div class="space-y-1.5">
+<label class="block font-label-prominent text-label-prominent text-on-surface">Delegation Scale</label>
+<select class="w-full h-12 px-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option value="1-4">Small Executive Group (1-4 delegates) — Standard</option>
+<option value="5-8">Mid Corporate Delegation (5-8 delegates)</option>
+<option value="9+">Custom Institutional Taskforce (9+ delegates)</option>
+</select>
+</div>
+<!-- Corporate Entity Details -->
+<div class="space-y-1.5">
+<label class="block font-label-prominent text-label-prominent text-on-surface">Company / Corporate Entity</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g., Unilever Global, Temasek, L’Oréal" required="" type="text"/>
+</div>
+<!-- Industry Sector Focus -->
+<div class="space-y-1.5">
+<label class="block font-label-prominent text-label-prominent text-on-surface">Category Specialization</label>
+<select class="w-full h-12 px-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option value="packaged-food">Packaged Food &amp; Snacks</option>
+<option value="beverages">Ready-to-Drink Beverages &amp; Dairy</option>
+<option value="beauty-personal-care">Personal Care, Cosmetics &amp; Hygiene</option>
+<option value="household-cleaning">Household &amp; Fabric Care</option>
+<option value="general-fmcg">Multi-Category / Broad FMCG Overview</option>
+</select>
+</div>
+<!-- Primary CTAs -->
+<div class="pt-space-xs space-y-space-xs">
+<button class="w-full py-3.5 px-6 rounded-lg bg-primary-container text-surface-bright font-label-prominent text-label-prominent tracking-wide hover:bg-primary transition-all shadow-md flex items-center justify-center gap-space-xs" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+<span>Request This Experience</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="w-full py-3 px-6 rounded-lg bg-surface-container-high text-primary font-label-prominent text-label-prominent hover:bg-surface-dim transition-all flex items-center justify-center gap-space-xs" onclick="document.getElementById('inquiry-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-lg text-primary">chat</span>
+<span>Talk to Business Team / Custom Scope</span>
+</button>
+</div>
+</form>
+<!-- Sovereign Trust Indicators -->
+<div class="pt-space-sm space-y-space-xs text-on-surface-variant font-label-caption text-label-caption">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-primary">policy</span>
+<span>Bespoke Mutual NDAs supported prior to briefing</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-primary">fact_check</span>
+<span>Customized category focus (Food, Beverage, Beauty)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+<span>Verified local distribution executive network</span>
+</div>
+</div>
+</div>
+<!-- Corporate Advisory Desk Badge -->
+<div class="p-space-md rounded-xl bg-surface-container-high/70 flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-surface-bright shrink-0">
+<span class="material-symbols-outlined text-xl">contact_support</span>
+</div>
+<div>
+<h4 class="font-label-prominent text-label-prominent text-primary">Corporate Advisory Desk</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct line: +62 21 5798 8000</p>
+<p class="font-label-caption text-label-caption text-secondary">jakarta.desk@visitindonesia.co.id</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Interactive Modal / Inquiry Drawer for Custom Scopes -->
+<div class="fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm hidden flex items-center justify-center p-margin-mobile" id="inquiry-modal">
+<div class="bg-surface rounded-xl max-w-xl w-full p-space-xl shadow-2xl relative space-y-space-md">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="document.getElementById('inquiry-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<div class="space-y-1">
+<span class="font-label-caption text-label-caption uppercase tracking-wider text-primary-container font-semibold">Confidential Immersion Scoping</span>
+<h3 class="font-headline-md text-headline-md text-primary">Request FMCG Market Discovery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Our Jakarta institutional desk will curate a custom day blueprint and assign a dedicated sector consultant within 24 hours.
+        </p>
+</div>
+<form class="space-y-space-sm" onsubmit="event.preventDefault(); alert('Inquiry successfully logged. Our Executive Desk in SCBD will contact you within 24 business hours.'); document.getElementById('inquiry-modal').classList.add('hidden');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-caption text-label-caption uppercase text-on-surface-variant mb-1">Corporate Email</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="name@corporation.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-caption text-label-caption uppercase text-on-surface-variant mb-1">Company Website</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="https://..." required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-caption text-label-caption uppercase text-on-surface-variant mb-1">Target Sector / Product Line</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g., Dairy alternatives, Skin whitening" type="text"/>
+</div>
+<div>
+<label class="block font-label-caption text-label-caption uppercase text-on-surface-variant mb-1">Estimated Date Window</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g., Q3 2025 or June 12-16" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caption text-label-caption uppercase text-on-surface-variant mb-1">Specific Discovery Inquiries &amp; Agenda Objectives</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Specify if you require meetings with cold-chain providers, BPOM consultants, or specific mini-mart buyer categories..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-caption text-label-caption">
+<input class="rounded text-primary-container" id="nda-req" type="checkbox"/>
+<label for="nda-req">Execute a standard Non-Disclosure Agreement (NDA) prior to data transfer</label>
+</div>
+<div class="pt-space-xs flex justify-end gap-space-sm">
+<button class="px-5 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-prominent text-label-prominent" onclick="document.getElementById('inquiry-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-6 py-2.5 rounded-lg bg-primary-container text-surface-bright font-label-prominent text-label-prominent hover:bg-primary transition-all" type="submit">
+            Submit Corporate Inquiry
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-3xl"><div class="w-full px-margin-mobile md:px-margin-tablet xl:px-margin-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 space-y-space-md pr-space-md"><div class="flex items-center gap-space-sm"><img alt="VisitIndonesia.co.id Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrhSACeSFzbdf5G-Zt43WTOZohH28QGQEun4T5dDQZ4aOOKTQywVvH5bnu9EUJWIWfnz9wPXPDxIzunKBbOfOOeC5TvssOijNhZsNlUMTpxsbngeUGHl_SY-9et4n37A65v1SUZVzCHe_fDW03vxCo8i0A-JWtgbwMo3OcWwwv7au2ga_FHCwkOQP3M-dv64sK_rDblY1J-Rdmh28tHTicaqo56VpuuoSsvDHn5vW7GmM2GGHS-s3rqQ"/><span class="font-title-editorial text-title-editorial tracking-tight text-primary font-semibold">VISITINDONESIA<span class="text-tertiary-container font-body-sm text-body-sm align-super text-xs font-bold">.CO.ID</span></span></div><p class="font-title-editorial text-title-editorial italic text-primary-container max-w-sm">Experience Indonesia beyond the ordinary.</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-md">The premier sovereign marketplace connecting discerning global travelers, accredited institutional investors, and strategic venture builders to sovereign Indonesian opportunities and private expeditions.</p><div class="pt-space-sm space-y-space-xs"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-caption text-label-caption"><span class="material-symbols-outlined text-base text-primary">verified</span><span>BKPM &amp; KEMENPAREKRAF REGISTERED PARTNER</span></div><div class="flex items-center gap-space-sm text-on-surface-variant font-label-caption text-label-caption"><span class="material-symbols-outlined text-base text-primary">support_agent</span><span>24/7 DIPLOMATIC &amp; EXECUTIVE DESK · JAKARTA &amp; BALI</span></div></div></div><div class="space-y-space-md"><h3 class="font-label-prominent text-label-prominent text-primary uppercase tracking-widest">Explore</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="experiences" href="/experiences">Experiences</a></li><li><a class="hover:text-primary transition-colors" data-path="destinations" href="/#destinations">Destinations</a></li><li><a class="hover:text-primary transition-colors" data-path="curated-categories" href="/experiences">Categories</a></li><li><a class="hover:text-primary transition-colors" data-path="batavia-heritage" href="/jakarta-heritage">Batavia &amp; Heritage</a></li><li><a class="hover:text-primary transition-colors" data-path="culinary-journeys" href="/experiences">Culinary Journeys</a></li><li><a class="hover:text-primary transition-colors" data-path="coffee-expeditions" href="/experiences">Coffee Expeditions</a></li></ul></div><div class="space-y-space-md"><h3 class="font-label-prominent text-label-prominent text-primary uppercase tracking-widest">Business</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="business" href="/business">Business Experiences</a></li><li><a class="hover:text-primary transition-colors" data-path="fmcg-retail-discovery" href="/fmcg-market">FMCG &amp; Retail Discovery</a></li><li><a class="hover:text-primary transition-colors" data-path="manufacturing-visits" href="/business">Manufacturing Visits</a></li><li><a class="hover:text-primary transition-colors" data-path="market-entry" href="/business#consultation-form">Market Entry Advisory</a></li><li><a class="hover:text-primary transition-colors" data-path="partner-verification" href="/business#consultation-form">Partner Verification</a></li><li><a class="hover:text-primary transition-colors" data-path="supplier-matching" href="/business#consultation-form">Supplier Matching</a></li></ul></div><div class="space-y-space-md"><h3 class="font-label-prominent text-label-prominent text-primary uppercase tracking-widest">Company</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about-us" href="/">About Us</a></li><li><a class="hover:text-primary transition-colors" data-path="become-partner" href="/business#consultation-form">Become a Partner</a></li><li><a class="hover:text-primary transition-colors" data-path="press-stories" href="/">Press &amp; Stories</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="/business#consultation-form">Contact &amp; Inquiries</a></li><li><a class="hover:text-primary transition-colors" data-path="faq" href="/">FAQ</a></li></ul></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex flex-wrap items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="terms-of-service" href="/">Terms of Service</a><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="/">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="booking-guarantee" href="/">Booking Guarantee</a><a class="hover:text-primary transition-colors" data-path="cancellation-terms" href="/">Cancellation Terms</a></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-caption text-label-caption"><span class="material-symbols-outlined text-base">public</span><span>ENGLISH (US)</span><span>·</span><span>USD ($)</span></div><p class="font-label-caption text-label-caption text-on-surface-variant">© 2025 VisitIndonesia.co.id. All rights reserved.</p></div></div></div></footer></body></html>
